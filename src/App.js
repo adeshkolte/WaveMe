@@ -9,7 +9,7 @@ const App = () => {
    */
   const [currentAccount, setCurrentAccount] = useState('')
   const [allWaves, setAllWaves] = useState([])
-  const contractAddress = '0x9f72bed36cb4a14401a1a96237ed9ef8739d7511' // copy paste the address after deploying your smart comtract to rinkeby
+  const contractAddress = "0xc4ac716f6C1706529F2FAdB671CcD38938e0A165" // copy paste the address after deploying your smart comtract to rinkeby
   const contractABI = abi.abi
   const [count, updateCount] = useState(0)
 
@@ -128,7 +128,7 @@ const App = () => {
         /*
          * Execute the actual wave from your smart contract
          */
-        const waveTxn = await wavePortalContract.wave("Hey Adesh Here", {
+        const waveTxn = await wavePortalContract.wave("I love you Sau", {
           gasLimit: 300000,
         });
         console.log("Mining...", waveTxn.hash);
